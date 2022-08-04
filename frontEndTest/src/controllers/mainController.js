@@ -1,6 +1,6 @@
 let controller = {
     home: (req, res)=>{
-        res.render('index' , { titlePage : " WELCOME"})
+        res.render('index' , { titlePage : "Front End Test"})
     }
 }
 
