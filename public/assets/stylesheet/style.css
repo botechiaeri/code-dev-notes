@@ -17,6 +17,10 @@ body{
     list-style-type: none;
 }
 
+img{
+    width: 50px;
+    height: 50px;
+  }
 
 
 .headerDisplay{
@@ -73,12 +77,23 @@ body{
 ul > li{
     align-self: center;
 }
+
+aside{
+    display: flex;
+    flex-flow: column wrap;
+    width: 18%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 .pageDisplay{
     display: flex;
-    flex-flow: row column;
-    width: 100vw;
+    flex-flow: column wrap;
+    width:  60vw;
     height: calc(95vh - 100px);
     margin-top: 0px;
+    justify-content: space-between;
+align-items: space-between; 
 }
 
 
@@ -88,21 +103,30 @@ ul > li{
 }
 
 
-
-
 .main-display{
-    display: flex;
-    flex-flow: row wrap;
-    width: 50%;
-    height: 100%;
-}
-
-aside{
+    overflow: scroll;
     display: flex;
     flex-flow: column wrap;
-    width: 18%;
-    height: 100%;
+    width: 70vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccccc;
+  
 }
+
+.card{
+    display: flex;
+    flex-flow: row wrap;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+
+
 table{
     background-color: #E5F4FF;;
 }
@@ -132,11 +156,22 @@ table{
 }
 
 footer{
- height: 3vh;
+   padding-top: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+ height:5vh;
  width: 100vw;
+ justify-content: center;
+ align-self: flex-end;
+
 }
 
 .arrow-icon {
     object-fit: contain;
 height : 50%;
+  }
+
+
+  .aside>table{
+    width: 100%;
   }
