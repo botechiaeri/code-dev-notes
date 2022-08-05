@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Botechia eri">
+<meta name="description" content="Clone for frontEnd Test application FrontEnd Test">
 <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
@@ -17,25 +19,21 @@
 <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 <link rel="manifest" href="/assets/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/assets/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="assets/ms-icon-244x244.png">
-<meta name="theme-color" content="#ffffff">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="assets/stylesheet/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <title>CLONE CARD - FrontEnt Test</title>
+<link rel="stylesheet" href="assets/stylesheet/style.css">
 </head>
 <body>
 <header class="headerDisplay">
@@ -43,13 +41,15 @@
 <div class="headerBox">
 <img class="icon-clone" src="assets/images/svg/logo-clone.svg" alt="logo isnta-sounds-clone"/>
 <h1 class="t-icon"> FrontEnd Test</h1>
+
+<img src="assets/images/svg/brand-clone.svg" alt="logo insta sounds clone" class="box" />
 <ul class="box box2">
 <li class="left-icons"><i class="fa-solid fa-headphones"></i></li>
 <li class="left-icons">B</li>
 <li class="left-icons">A</li>
-<li class="left-icons">SHARE</li>
-<li class="left-icons"><i class="fa-solid fa-play"></i></li>
-<li class="left-icons">60%</li>
+<li class="left-icons">C</li>
+<li class="left-icons">D</li>
+<li class="left-icons">E</li>
 </ul>
 </div>
 
@@ -137,29 +137,86 @@
 <div class="card-header">
   <div class="user-card">
     <img class="img-user" src="assets/images/avatar/avatar00.svg">
+    <h2>username </h2>
   </div>
   <p>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.</p>
   </div>
-<!-- Slider main container -->
+
 <div class="swiper-container">
-  <div class="swiper-wrapper">
-
-      <div class="swiper-slide" data-hash="slide1">Slide 1</div>
-      <div class="swiper-slide" data-hash="slide2">Slide 2</div>
-      <div class="swiper-slide" data-hash="slide3">Slide 3</div>
-      <div class="swiper-slide" data-hash="slide4">Slide 4</div>
-      <div class="swiper-slide" data-hash="slide5">Slide 5</div>
-      ...
-
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img src="https://picsum.photos/id/1/200/300" />
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img src="https://picsum.photos/id/1/200/300" />
+        </div>
+      </div>
+      <div class="swiper-slide">Plain slide with text</div>
+      <div class="swiper-slide">
+  
+        <div class="swiper-zoom-container" data-swiper-zoom="5">
+          <img src="https://picsum.photos/id/1/200/300" />
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+</div>
+<div class="input-form">
+  <form method="post" action="/">
+  <input type="text" id="userFB" class="input-control">
+  <textarea row="4" col="3" type="text" id="userFB" class="input-control"></textarea>
+  </form>
 </div>
 <div class="card-footer">
   <p>footer card</p>
 </div>
 </div>
+<div class="card">
+  <div class="card-header">
+    <div class="user-card">
+      <img class="img-user" src="assets/images/avatar/avatar00.svg">
+      <h2>username </h2>
+    </div>
+    <p>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.</p>
+    </div>
+  
+  <div class="swiper-container">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-zoom-container">
+            <img src="https://picsum.photos/id/1/200/300" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-zoom-container">
+            <img src="https://picsum.photos/id/1/200/300" />
+          </div>
+        </div>
+        <div class="swiper-slide">Plain slide with text</div>
+        <div class="swiper-slide">
+    
+          <div class="swiper-zoom-container" data-swiper-zoom="5">
+            <img src="https://picsum.photos/id/1/200/300" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="input-form">
+    <form method="post" action="/">
+    <input type="text" id="userFB" class="input-control">
+    <textarea row="4" col="3" type="text" id="userFB" class="input-control"></textarea>
+    </form>
+  </div>
+  <div class="card-footer">
+    <p>footer card</p>
+  </div>
+  </div>
 </main>
 
 <aside class="aside">
@@ -208,7 +265,8 @@
 </section>
 
 <footer>
-    <p>MADE WITH LOVE @BOTECHIAERI</p>
+    <p>MADE WITH LOVE</p>
 </footer>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
