@@ -102,11 +102,23 @@ aside {
     overflow: scroll;
     display: flex;
     flex-flow: column wrap;
-    width: 70vw;
-    height: 90vh;
+    max-width: 70vw;
+    max-height: 90vh;
     justify-content: center;
     align-items: center;
     background-color: #cccccc;
+}
+
+.main-display {
+    overflow: scroll;
+    display: flex;
+    flex-flow: column wrap;
+    width: 1440vw;
+    height: 1020vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccccc;
+    overflow: scroll;
 }
 
 .card-container {
