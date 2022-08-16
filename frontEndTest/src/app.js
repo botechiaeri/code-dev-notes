@@ -24,8 +24,8 @@ const mainRouters = require('./routes/main.js');
 
 app.use('/', mainRouters);
 
-app.listen(process.env.PORT || 3065, () => {
-    console.log('WS LEVANTADO Y CORRIENDO EN 3080');
+app.listen(process.env.PORT || 3090, () => {
+    console.log('WS LEVANTADO Y CORRIENDO EN 3090');
 });
 
 module.exports = app;
