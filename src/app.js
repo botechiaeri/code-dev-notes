@@ -3,7 +3,7 @@
 
 const express = require('express');
 const path = require('path');
-const ejs = require('ejs')
+
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -24,8 +24,8 @@ const mainRouters = require('./routes/main.js');
 
 app.use('/', mainRouters);
 
-app.listen(process.env.PORT || 3030, () => {
-    console.log('WS LEVANTADO Y CORRIENDO EN 3030');
+app.listen(process.env.PORT || 3090, () => {
+    console.log('WS LEVANTADO Y CORRIENDO EN 3090');
 });
 
 module.exports = app;
